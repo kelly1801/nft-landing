@@ -113,7 +113,8 @@ const nftData = {
         'image': './images/Img-card-home-1.png',
         'title': 'Sussian de eniosta',
         'description': 'The first and bigguest NFT market in the world',
-        'btn': 'Live'
+        'btn': 'Live',
+        'color': '#dc8c67'
     },
 
     {
@@ -121,7 +122,8 @@ const nftData = {
         'image': './images/Img-card-home-2.png',
         'title': 'The Space Cowboboys',
         'description': 'The first and bigguest NFT market in the world',
-        'btn': 'Live'
+        'btn': 'Live',
+        'color': '#a54d89'
     },
 
     {
@@ -129,7 +131,8 @@ const nftData = {
         'image': './images/Img-card-home-3.png',
         'title': 'Lee Mullican',
         'description': 'The first and bigguest NFT market in the world',
-        'btn': 'Live'
+        'btn': 'Live',
+        'color': '#fe2901'
     }
 ],
 

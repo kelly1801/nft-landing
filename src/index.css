@@ -44,6 +44,8 @@ p{
   font: var(--subtitle-22bold);
 }
 
-
+.text-blue{
+  color: var(--primary);
+}
 
 
