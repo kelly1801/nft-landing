@@ -34,11 +34,13 @@ export default function Home() {
 
 <Card/>
      </MainSection>
+     
      <Section>
         
 {homeCardCollection}
 
      </Section>
+     
      <SectionCollections>
         <h2>Las mejores colecciones sobre <span className='text-blue'>Los últimos 7 días</span></h2>
      <CollectionsContainer>
@@ -58,12 +60,21 @@ width: 35%;
 h1 {
   
 margin: 1rem 0;
-
+font: var(--title-45bold)
+@media(max-width: 568px){
+font: var(--title-32bold);
+}
 }
 p{
 font: var(--subtitle-22medium);
   margin-bottom: 1rem ;
   color:(--black)
+}
+
+@media(max-width: 768px){
+ width: 100%; 
+  
+ 
 }
 
 `
@@ -80,15 +91,30 @@ background-image: url('./images/cover-home.png');
 background-repeat: no-repeat;
 background-position: cover;
 height: calc( 100vh - 4rem);
+
+@media(max-width: 768px){
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+}
 `
 const Section = styled(MainSection)`
 background-image: none;
 height: 100vh;
+
 ` 
 const SectionCollections = styled(Section)`
 flex-direction: column;
+height: 100vh;
+margin-top: 5rem;
 h2 {
   margin: 1rem 0;
+  font: var(--subtitle-22bold);
+}
+
+@media(max-width: 768px){
+padding: 50rem 0;
+
 }
 `
 
@@ -100,14 +126,25 @@ padding: 0.5rem 1.5rem;
 margin-right: 1rem;
 border-radius: 5px;
 cursor: pointer;
+@media(max-width: 768px){
+  width: 100%
+
+}
+
+
 `
 const CollectionsContainer = styled.div`
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-row-gap: 16px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-row-gap: 16px;
   width: 100%;
 
+  @media(max-width: 768px){
+    display: flex;
+    flex-direction: column;
+  height: 100vh;
   
+  }
 `

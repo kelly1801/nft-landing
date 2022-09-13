@@ -44,10 +44,19 @@ border: 1px solid var(--primary);
 padding: 0.5rem 1.5rem;
 
 border-radius: 5px;
+@media(max-width: 768px){
+  display: none;
+ 
+}
+
 `
 
 const BtnLeft = styled(Btn)`
 color: var(--white);
 background-color: var(--primary);
 margin-left: 1rem;
+@media(max-width: 768px){
+  display: inline;
+ 
+}
 `

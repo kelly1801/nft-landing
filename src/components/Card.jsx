@@ -30,8 +30,7 @@ const CardBody = styled.div`
 display: flex;
 flex-direction: column;
 width: 100%;
-max-width: 438px;
-
+max-width: 470px;
 
 `
 const Figure = styled.figure`

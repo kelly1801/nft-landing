@@ -25,12 +25,20 @@ export default HomeCard;
 const CardBody = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  
+
+  @media(max-width: 768px){
+    margin: 2rem 0;
+   
+  
+  }
 `;
 const Figure = styled.figure`
   width: 100%;
   border-radius: 10px;
-
+  
+  height: auto;
   img {
     width: 100%;
 

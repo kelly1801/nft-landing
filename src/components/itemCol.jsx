@@ -43,6 +43,7 @@ margin: 0.5rem 1rem;
 p {
     font: var(--body-16bold);
 }
+
 `
 
 const ItemDescription = styled.figcaption`
