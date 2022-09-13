@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Card from '../components/Card'
 import HomeCard from '../components/HomeCard'
 import nftData from '../../data'
+import ItemCol from '../components/itemCol'
 
 export default function Home() {
   
@@ -14,6 +15,10 @@ export default function Home() {
   key={homeCard.id}
   color={homeCard.color}
   />)
+
+  const collections = nftData.HomeCollection.map(item =>
+    <ItemCol key={item.id} id={item.id} title={item.title} image={item.image} price={item.price} stock={item.stock}/>
+    )
  
   return (
     
@@ -34,9 +39,12 @@ export default function Home() {
 {homeCardCollection}
 
      </Section>
-     <Section>
+     <SectionCollections>
         <h2>Las mejores colecciones sobre <span className='text-blue'>Los últimos 7 días</span></h2>
-     </Section>
+     <CollectionsContainer>
+     {collections}
+     </CollectionsContainer>
+     </SectionCollections>
    
     </MainContent>
   )
@@ -77,6 +85,13 @@ const Section = styled(MainSection)`
 background-image: none;
 height: 100vh;
 ` 
+const SectionCollections = styled(Section)`
+flex-direction: column;
+h2 {
+  margin: 1rem 0;
+}
+`
+
 const Btn = styled.button`
 color: var(--white);
 background-color: var(--primary);
@@ -84,4 +99,15 @@ border: 1px solid var(--primary);
 padding: 0.5rem 1.5rem;
 margin-right: 1rem;
 border-radius: 5px;
+cursor: pointer;
+`
+const CollectionsContainer = styled.div`
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-row-gap: 16px;
+  width: 100%;
+
+  
 `
