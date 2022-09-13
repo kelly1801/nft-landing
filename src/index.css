@@ -28,6 +28,7 @@
 
 body {
   font: var(--body-16regular);
+overflow-x: hidden;
 }
 
 h1{

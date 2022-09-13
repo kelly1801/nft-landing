@@ -33,7 +33,7 @@ flex-direction: column;
 width: 100%;
 margin: 1rem;
 max-width: 400px;
-
+cursor: pointer;
 
 `
 const Figure = styled.figure`

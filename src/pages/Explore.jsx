@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/Header'
+
 import Banner from '../components/Banner'
 import BannerMenu from '../components/BannerMenu'
 import nftData from '../../data'
@@ -15,7 +15,7 @@ const cards = nftData.trends.map(
    
 return (
     <div>
-        <Header/>
+     
         <Banner img={"./images/Img-banner-2.png"}/>
       <BannerMenu/>
       <CardSection>
@@ -38,5 +38,8 @@ grid-template-rows: repeat(3, 1fr);
 grid-column-gap: 1rem;
 grid-row-gap: 1rem;
 
-
+@media(max-width: 768px){
+display: flex;
+flex-direction: column;
+}
 `
