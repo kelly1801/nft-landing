@@ -1,10 +1,11 @@
 import Home from "./pages/Home"
+import Explore from "./pages/Explore"
 function App() {
  
 
   return (
     <div className="App">
-    <Home/>
+    <Explore/>
     
     </div>
   )
