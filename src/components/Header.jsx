@@ -20,10 +20,12 @@ function NaveBar() {
 
 export default NaveBar
 const NavBar = styled.nav`
-background-color: #fff;
+background-color: var(--white);
 display:flex;
 justify-content: space-between;
-align-items: center
+align-items: center;
+height: 4rem;
+padding: 2rem;
 `
 const LogoContainer = styled.figure`
 margin: 1rem;
@@ -33,19 +35,19 @@ const ButtonGroup = styled.div`
 
 display: flex;
 align-items: center;
-margin-left: 1rem;
+
 `
 const Btn = styled.button`
 color: var(--primary);
 background-color: var(--white);
 border: 1px solid var(--primary);
 padding: 0.5rem 1.5rem;
-margin-right: 1rem;
+
 border-radius: 5px;
 `
 
 const BtnLeft = styled(Btn)`
 color: var(--white);
 background-color: var(--primary);
-
+margin-left: 1rem;
 `

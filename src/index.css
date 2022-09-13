@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;500;700;800;900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  
 }
 :root { 
   --primary: #2081e2; 
@@ -26,17 +30,17 @@ body {
 }
 
 h1{
-  color: var(--green);
+
   font: var(--title-45bold);
 }
 
 h2{
-  color: var(--grey);
+
   font: var(--title-32bold);
 }
 
 p{
-  color: var(--primary);
+  
   font: var(--subtitle-22bold);
 }
 
