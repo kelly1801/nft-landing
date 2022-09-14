@@ -28,5 +28,9 @@ display: flex;
 flex-direction:column;
 text-align: center;
 margin: 5rem 0;
+
+@media(max-width: 768px){
+  margin: 3rem 0;
+}
 `
 

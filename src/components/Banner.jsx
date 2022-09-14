@@ -1,12 +1,12 @@
 import React from 'react'
-
+import styled from 'styled-components'
 
 function Banner({img}) {
   return (
    
-    <figure>
+    <BannerContainer>
         <img src={img} alt="banner" />
-    </figure>
+    </BannerContainer>
 
    
   
@@ -14,3 +14,10 @@ function Banner({img}) {
 }
 
 export default Banner
+
+const BannerContainer = styled.figure`
+width:100%;
+img{
+  width: 100%;
+}
+`

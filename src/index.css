@@ -51,11 +51,3 @@ p{
 }
 
 
-.avatar{
- 
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translateX(-50%)
-  ;
-}

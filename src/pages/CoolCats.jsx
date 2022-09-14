@@ -51,6 +51,11 @@ const CatsContainer =  styled.article`
   grid-column-gap: 16px;
   grid-row-gap: 06px;
   padding: 0 4rem;
+
+  @media(max-width: 768px){
+display: flex;
+flex-direction: column;
+  }
   
 `
 
