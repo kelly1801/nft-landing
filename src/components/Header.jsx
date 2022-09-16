@@ -1,13 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from "react-router-dom"
 
 function NaveBar() {
   return (
+   
     <NavBar>
+     
         <LogoContainer>
-            <img src="./images/logo.png" alt="company logo" />
+        <Link to='/'>
+            <img src="./explore/images/logo.png" alt="company logo" />
+            </Link>
             </LogoContainer>
-    
+            
     <ButtonGroup>
        <Btn>Iniciar sesión</Btn>
        <BtnLeft>Iniciar sesión</BtnLeft>

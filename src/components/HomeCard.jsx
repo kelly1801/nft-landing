@@ -5,7 +5,7 @@ function HomeCard({ image, button, description, title, color }) {
   return (
     <CardBody>
       <Figure>
-        <img src={image} alt="cover" />
+        <img src={`./explore/${image}`} alt="cover" />
 
         <CardDescription color={color}>
           <TextWrapper>

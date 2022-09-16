@@ -6,10 +6,10 @@ function Card() {
 
 <CardBody>
 <Figure>
-    <img src="./images/img-cover.png" alt="cover" />
+    <img src="./explore/images/img-cover.png" alt="cover" />
 
 <CardDescription>
-    <img src="./images/profile-cover.png" alt="" />
+    <img src="./explore/images/profile-cover.png" alt="" />
     
     <TextWrapper>
     <p>Tiny Dancer #2</p>

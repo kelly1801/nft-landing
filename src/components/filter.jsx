@@ -106,14 +106,20 @@ export default Filter
 
 const SideBar = styled.aside`
 
-width: 30rem;
-height:100vh;
-
-
+@media(max-width: 768px){
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
 details {
-  margin-left:2rem;
+  
   display: flex;
   flex-direction: column;
+  @media(max-width: 768px){
+
+
+   }
 
 }
 label {
@@ -126,7 +132,10 @@ input {
 
 summary {
   display: flex;
-  align-items: center;
+ width: 8rem;
+ margin-left: 1rem;
+
+
 }
 
 

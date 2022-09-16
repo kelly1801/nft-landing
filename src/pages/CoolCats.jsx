@@ -40,6 +40,9 @@ const PageContainer = styled.main`
 `
 const MainContent = styled.section`
 display: flex;
+@media(max-width: 768px){
+ flex-direction: column;
+}
 `
 const CatsContainer =  styled.article`
 
@@ -49,12 +52,16 @@ const CatsContainer =  styled.article`
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 16px;
-  grid-row-gap: 06px;
+  grid-row-gap: 6px;
   padding: 0 4rem;
 
   @media(max-width: 768px){
-display: flex;
-flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 6px;
+    grid-row-gap: 1px;
+    margin: 0;
+    padding: 2rem;
   }
   
 `

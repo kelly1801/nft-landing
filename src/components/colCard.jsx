@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from "react-router-dom";
 
 function ColCard({img, icon,title, author, description}) {
   return (
-   
 <CardBody>
+<Link to='coolcats'>
 <Figure>
     <img src={img} alt="collection cover" />
 
@@ -19,9 +20,8 @@ function ColCard({img, icon,title, author, description}) {
 
 </CardDescription>
 </Figure>
-
+</Link>
 </CardBody>
-
   )
 }
 

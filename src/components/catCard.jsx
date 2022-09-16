@@ -16,7 +16,7 @@ function catCard({image, title}) {
     <p><img src='./images/Img-price.png'/>  0.003</p>
     <Before>
         <p>antes</p>
-    <img src='./images/Img-price.png'/>
+    <img src={`./images/Img-price.png`}/>
         <p> 0.003</p></Before>
     <Likes>
     <FavoriteBorderIcon/> 

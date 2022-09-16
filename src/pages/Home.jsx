@@ -5,6 +5,7 @@ import Card from '../components/Card'
 import HomeCard from '../components/HomeCard'
 import nftData from '../../data'
 import ItemCol from '../components/itemCol'
+import { Link } from "react-router-dom";
 
 export default function Home() {
   
@@ -29,7 +30,9 @@ export default function Home() {
 <TextWrapper>
     <h1>Descubra, recopile y venda NFT extraordinarios</h1>
     <p>en el primer y más grande mercado de NFT del mundo</p>
+    <Link to="/explore">
     <Btn>Explorar</Btn>
+    </Link>
 </TextWrapper>
 
 <Card/>
@@ -80,7 +83,7 @@ font: var(--subtitle-22medium);
 `
 const MainContent = styled.main`
 background-color: var(--grey-2);
-height: 100vh;
+
 `
 const MainSection = styled.header`
 display: flex;
