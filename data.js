@@ -5,43 +5,43 @@ const nftData = {
         'id': 1,
         'image': './images/Img-collection-home-1.png',
         'title': 'The Sandbox',
-        'price': '15,473.38',
-        'stock': '+39.05%'
+        'price': '12,473.38',
+        'stock': '+20.05%'
     },
     {
         'id': 2,
         'image': './images/Img-collection-home-2.png',
         'title': 'Bored Ape Yacht Club',
-        'price': '15,473.38',
+        'price': '13,243.20',
         'stock': '+39.05%'
     },
     {
         'id': 3,
         'image': './images/Img-collection-home-3.png',
         'title': 'CryptoPunks',
-        'price': '15,473.38',
-        'stock': '+39.05%'
+        'price': '11,234.18',
+        'stock': '+19.05%'
     },
     {
         'id': 4,
         'image': './images/Img-collection-home-4.png',
         'title': 'The little NFT',
-        'price': '15,473.38',
-        'stock': '+39.05%'
+        'price': '12,133.38',
+        'stock': '+59.05%'
     },
     {
         'id': 5,
         'image': './images/Img-collection-home-5.png',
         'title': 'Wolf Game - Migrated',
-        'price': '15,473.38',
+        'price': '12,434.28',
         'stock': '+39.05%'
     },
     {
         'id': 6,
         'image': './images/Img-collection-home-6.png',
         'title': 'Decentraland',
-        'price': '15,473.38',
-        'stock': '+39.05%'
+        'price': '10,423.38',
+        'stock': '+10.05%'
     },
     {
         'id': 7,
@@ -238,22 +238,26 @@ const nftData = {
     {
         'id': 1,
         'image': './images/Img-cat-1.png',
-        'name': '#8781'
+        'name': '#8781',
+        'property': 'green'
     },
     {
         'id': 2,
         'image': './images/Img-cat-2.png',
-        'name': '#8782'
+        'name': '#8782',
+        'property': 'white'
     },
     {
         'id': 3,
         'image': './images/Img-cat-3.png',
-        'name': '#8783'
+        'name': '#8783',
+        'property': 'ditto'
     },
     {
         'id': 4,
         'image': './images/Img-cat-4.png',
-        'name': '#8784'
+        'name': '#8784',
+        'property': 'ditto'
     },
     {
         'id': 5,
@@ -263,17 +267,20 @@ const nftData = {
     {
         'id': 6,
         'image': './images/Img-cat-6.png',
-        'name': '#8786'
+        'name': '#8786',
+        'property': 'robe'
     },
     {
         'id': 7,
         'image': './images/Img-cat-7.png',
-        'name': '#8787'
+        'name': '#8787',
+        'property': 'robe'
     },
     {
         'id': 8,
         'image': './images/Img-cat-8.png',
-        'name': '#8788'
+        'name': '#8788',
+        'property': 'white'
     },
     {
         'id': 9,
@@ -283,12 +290,14 @@ const nftData = {
     {
         'id': 10,
         'image': './images/Img-cat-10.png',
-        'name': '#8790'
+        'name': '#8790',
+        'property': 'white'
     },
     {
         'id': 11,
         'image': './images/Img-cat-11.png',
-        'name': '#8791'
+        'name': '#8791',
+        'property': 'white'
     },
     {
         'id': 12,
@@ -308,7 +317,8 @@ const nftData = {
     {
         'id': 15,
         'image': './images/Img-cat-15.png',
-        'name': '#8795'
+        'name': '#8795',
+        'property': 'green'
     },
     {
         'id': 16,
@@ -318,17 +328,21 @@ const nftData = {
     {
         'id': 17,
         'image': './images/Img-cat-17.png',
-        'name': '#8797'
+        'name': '#8797',
+        'property': 'beard'
     },
     {
         'id': 18,
         'image': './images/Img-cat-18.png',
-        'name': '#8798'
+        'name': '#8798',
+        'property': 'robe'
     },
     {
         'id': 19,
         'image': './images/Img-cat-19.png',
-        'name': '#8799'
+        'name': '#8799',
+        'property': 'robe'
+
     },
     {
         'id': 20,
@@ -339,5 +353,6 @@ const nftData = {
 ]
     
 }
+
 
 export default nftData

@@ -7,10 +7,10 @@ function ColCard({img, icon,title, author, description}) {
 <CardBody>
 <Link to='coolcats'>
 <Figure>
-    <img src={img} alt="collection cover" />
+    <img src={`./explore/${img}`} alt="collection cover" />
 
 <CardDescription>
-    <img src={icon} alt="icon collection" />
+    <img src={`./explore/${icon}`} alt="icon collection" />
     
     <TextWrapper>
     <h2>{title}</h2>
@@ -67,11 +67,11 @@ const TextWrapper = styled.div`
 margin: 1rem 0;
 text-align: center;
 h2 {
-    font: var(--subtitle-22medium);
+    font: var( --subtitle-22medium);
     
 }
 span {
-    font: var(--body-16bold);
+    font: var(--body-16regular);
     color: var(--primary);
    
 }

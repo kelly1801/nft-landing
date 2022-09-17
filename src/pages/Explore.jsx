@@ -16,7 +16,7 @@ const cards = nftData.trends.map(
 return (
     <div>
      
-        <Banner img={"./images/Img-banner-2.png"}/>
+        <Banner img={"./explore/images/Img-banner-2.png"}/>
       <BannerMenu/>
       <CardSection>
       {cards}

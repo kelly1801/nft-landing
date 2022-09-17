@@ -93,7 +93,7 @@ padding: 2rem;
 background-image: url('./images/cover-home.png');
 background-repeat: no-repeat;
 background-position: cover;
-height: calc( 100vh - 4rem);
+
 
 @media(max-width: 768px){
   flex-direction: column;
@@ -103,22 +103,19 @@ height: calc( 100vh - 4rem);
 `
 const Section = styled(MainSection)`
 background-image: none;
-height: 100vh;
+
 
 ` 
 const SectionCollections = styled(Section)`
 flex-direction: column;
-height: 100vh;
-margin-top: 5rem;
+
+
 h2 {
-  margin: 1rem 0;
+  margin: 2rem 0;
   font: var(--subtitle-22bold);
 }
 
-@media(max-width: 768px){
-padding: 50rem 0;
 
-}
 `
 
 const Btn = styled.button`
@@ -147,7 +144,7 @@ grid-row-gap: 16px;
   @media(max-width: 768px){
     display: flex;
     flex-direction: column;
-  height: 100vh;
+  
   
   }
 `

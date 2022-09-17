@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
-
-function Filter() {
+import Input from './Input'
+function Filter({getCheck, getChange}) {
   return (
     
    <SideBar>
@@ -12,90 +12,39 @@ function Filter() {
 <details open>
   <summary><GridViewOutlinedIcon/>Cara</summary>
 
-<label>
-  <input type="checkbox" name="ditto" id="ditto" />
-  Ditto
-  </label>
-  
-  <label>
-    <input type="checkbox" name="mummy" id="mummy" />
-  Mummy
-    </label>
+  <Input title="Ditto" value='ditto' getCheck={getCheck} getChange={getChange}/>
+ <Input title="Mummy" value='mummy' getCheck={getCheck} getChange={getChange}/>
+    <Input title="Beard Pirate" value='beard' getCheck={getCheck} getChange={getChange} />
     
-    <label>
-      <input type="checkbox" name="beard" id="beard" />
-      Beard Pirate
-      </label>
+    <Input title="Zombie" value='zombie' getCheck={getCheck} getChange={getChange} />
       
-      <label>
-        <input type="checkbox" name="zombie" id="zombie" />
-        Zombie
-        </label>
-        <label>
-          <input type="checkbox" name="eyes" id="eyes" />
-          Three eyes
-          </label>
-          
-          <label>
-            <input type="checkbox" name="unamused" id="unamused" />
-            Unamused
-            </label>
-            
-            <label>
-           
-              <input type="checkbox" name="angry" id="angry" />
-              Angry Cute
-              </label>
+     <Input title="Three eyes" getCheck={getCheck} getChange={getChange}/>
+     <Input title=" Unamused" getCheck={getCheck} getChange={getChange}/>
+     <Input title="Angry Cute" getCheck={getCheck} getChange={getChange} />
+     <Input title="Stunned" getCheck={getCheck} getChange={getChange}/>
+     <Input title="Sunglasses Heart" getCheck={getCheck} getChange={getChange} />   
+         
               
-              <label>
-                
-                <input type="checkbox" name="stunned" id="stunned" />
-                Stunned
-                </label>
-                
-                <label>
-                 
-                  <input type="checkbox" name="glasses" id="glasses" />
-                  Sunglasses Heart
-                  </label>
+             
 </details>
 
 <details open>
   <summary><GridViewOutlinedIcon/> Sombreros</summary>
 
- <label >
-  <input type="checkbox" name="hat_white" id="hat_white" />
-  Hat White
-  </label>
+ 
+ <Input title="White Hat" value='white' getCheck={getCheck} getChange={getChange}/>
+     <Input title="Bucket Hat Green" value='green' getCheck={getCheck} getChange={getChange}/>
+     <Input title="Mohawk Green" value='mohawk' getCheck={getCheck} getChange={getChange} /> 
   
-  <label >
-    <input type="checkbox" name="hat_green" id="hat_green" />
-    Bucket Hat Green
-    </label>
-    
-    <label >
-      <input type="checkbox" name="mohawk" id="mohawk" />
-      Mohawk Green
-      </label>
+ 
 </details>
 
 <details open>
   <summary> <GridViewOutlinedIcon/> Camisa</summary>
-
-  <label >
-    <input type="checkbox" name="overall" id="overall" />
-    Overalls blue
-    </label>
-    
-    <label htmlFor="">
-      <input type="checkbox" name="button" id="button" />
-      Buttondown green
-      </label>
-      
-      <label >
-        <input type="checkbox" name="robe" id="robe" />
-        Robe blue
-        </label>
+   <Input title="Overalls blue" getCheck={getCheck} getChange={getChange}/>
+     <Input title="Buttondown green" getCheck={getCheck} getChange={getChange}/>
+     <Input title=" Robe blue" getCheck={getCheck} getChange={getChange}/> 
+  
 </details>
 
    </SideBar>
@@ -112,6 +61,7 @@ const SideBar = styled.aside`
  justify-content: center;
  align-items: center;
 }
+
 details {
   
   display: flex;
@@ -123,12 +73,12 @@ details {
 
 }
 label {
-margin:  1rem;
-}
-
-input {
-  margin-right: 0.6rem;
-}
+  margin:  1rem;
+  }
+  
+  input {
+    margin-right: 0.6rem;
+  }
 
 summary {
   display: flex;
@@ -137,6 +87,4 @@ summary {
 
 
 }
-
-
 `

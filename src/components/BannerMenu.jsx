@@ -35,7 +35,7 @@ h2 {
 const List = styled.ul`
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: space-around;
 margin: 1rem 0;
 color: var(--grey);
 width: 100%;
@@ -43,7 +43,7 @@ border-bottom: 1px solid var(--grey);
 li:hover {
     color: var(--black);
     border-bottom: 2px solid var(--primary);
-padding: 1rem;
+
 font: var(--body-16bold);
 
 }

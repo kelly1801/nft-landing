@@ -1,19 +1,39 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import styled from 'styled-components'
 import Banner from '../components/Banner'
 import Header from '../components/Header'
 import CatsHeader from '../components/CatsHeader'
 import Avatar from '../components/Avatar'
 import Filter from '../components/filter'
-import nftData from '../../data'
 import CatCard from '../components/catCard'
 
-function CoolCats() {
-  const collection = nftData.coolCats.map(
-    card => <CatCard key={card.id} image={card.image} title={card.name}/>
-  )
+
+
+
+function CoolCats({catsCol}) {
+
+ const [inputField, setInputField] = useState({check: false})
+ const [filterValue, setFilterValue] = useState()
+const [filteredColl, setFilterColl] = useState() 
+ function handleChange(event){
   
-  return (
+  
+  setFilterValue(event.target.value )
+  setInputField( !inputField.check )
+  filterCard() 
+}
+
+  function filterCard(){
+
+  setFilterColl(catsCol.filter (card => card.property === filterValue).map(card => <CatCard key={card.id} image={card.image} title={card.name}/>))
+  }
+
+
+
+ const collection = catsCol.map( card => <CatCard key={card.id} image={card.image} title={card.name}/>)
+
+  
+return (
     <PageContainer>
     <Header/>
     <Banner img={"./images/Img-banner-1.png"}>
@@ -22,17 +42,20 @@ function CoolCats() {
     <CatsHeader/>
     
     <MainContent>
-    <Filter/>
+    <Filter  getCheck={inputField.check} getChange={handleChange}/>
+
 
     <CatsContainer>
-    {collection}
+      {filterValue? filteredColl: collection  }
+   
+    
       </CatsContainer>
       </MainContent>
 
     </PageContainer>
   )
 }
-
+// filterValue? collectionFiltered : collection
 export default CoolCats
 
 const PageContainer = styled.main`

@@ -1,8 +1,11 @@
 import React from 'react'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
+
 function catCard({image, title}) {
   return (
+    <Link to='catInfo'>
     <CardBody>
 <Figure>
     <img src={image} alt="collection cover" />
@@ -19,7 +22,7 @@ function catCard({image, title}) {
     <img src={`./images/Img-price.png`}/>
         <p> 0.003</p></Before>
     <Likes>
-    <FavoriteBorderIcon/> 
+    <FavoriteBorderIcon onClick={() => styles.color="red"}/> 
         <p>145</p>
         </Likes>
     </Price>
@@ -29,6 +32,7 @@ function catCard({image, title}) {
 </Figure>
 
 </CardBody>
+</Link>
   )
 }
 
@@ -75,6 +79,7 @@ display: flex;
 h2 {
     font: var( --body-16bold);
     text-align: left;
+    color: var(--black)
    
 }
 span {
