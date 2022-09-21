@@ -60,8 +60,12 @@ display: flex;
 width: 100%;
 margin: 1rem;
 cursor: pointer;
-
 align-items: center;
+
+@media(max-width: 768px){
+
+  flex-direction: column;
+}
 `
 const Autor = styled.span`
 color: var(--primary);
@@ -78,6 +82,11 @@ img{
     width:100%;
  
    border-radius: 10px 10px 0 0;
+}
+
+@media(max-width: 768px){
+
+  width: 85%;
 }
 `
 const Likes = styled.figcaption`
@@ -99,6 +108,15 @@ flex-direction: column;
 align-items: left;
 justify-content: center;
 width: 50%;
+
+@media(max-width: 768px){
+
+  width: 85%;
+
+  h1 {
+    font: var(--title-32bold);
+  }
+}
 `
 const Views = styled.div`
 display:flex;
@@ -113,6 +131,12 @@ margin: 1rem;
 p {
   margin: 0 1rem ;
   font: var(--body-16regular);
+}
+
+@media(max-width: 768px){
+
+  font: var(--body-14regular);
+  margin: 0.8rem;
 }
 `
 
@@ -138,6 +162,11 @@ justify-content: space-around;
 const ButtonGroup = styled.div`
 display: flex;
 
+@media(max-width: 768px){
+
+flex-direction: column;
+ 
+}
 `
 const Btn = styled.button`
 background-color: var(--primary);
@@ -148,6 +177,11 @@ color: var(--white);
 margin-left: 1.2rem;
 border-radius: 0.7rem;
 cursor: pointer;
+@media(max-width: 768px){
+
+  margin: 0.5rem 1rem;
+   
+  }
 `
 const BtnL = styled(Btn)`
 

@@ -20,9 +20,9 @@ const AvatarContainer = styled.figure`
    transform: translateX(-50%);
 
  @media(max-width: 768px){ 
-  top: 20%;
+  top: 15%;
   img{
-   width: 5rem;
-   
- }}
+   width: 4rem;
+}
+}
 `
