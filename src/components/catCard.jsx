@@ -46,7 +46,9 @@ width: 100%;
 margin: 1rem;
 max-width: 400px;
 cursor: pointer;
-
+@media(max-width:768px){
+    margin: 0;
+}
 `
 const Figure = styled.figure`
 width: 100%;

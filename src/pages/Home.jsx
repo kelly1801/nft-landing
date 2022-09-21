@@ -90,7 +90,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding: 2rem;
-background-image: url('./explore/images/cover-home.png');
+background-image: url('/cover-home.png');
 background-repeat: no-repeat;
 background-position: cover;
 
