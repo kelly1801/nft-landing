@@ -9,7 +9,7 @@ function NaveBar() {
      
         <LogoContainer>
         <Link to='/'>
-            <img src="logo.png" alt="company logo" />
+            <img src="/logo.png" alt="company logo" />
             </Link>
             </LogoContainer>
             

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Card from '../components/Card'
 import HomeCard from '../components/HomeCard'
 import nftData from '../../data'
-import ItemCol from '../components/itemCol'
+import ItemCol from '../components/ItemCol'
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -90,7 +90,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding: 2rem;
-background-image: url('./images/cover-home.png');
+background-image: url('./explore/images/cover-home.png');
 background-repeat: no-repeat;
 background-position: cover;
 

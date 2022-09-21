@@ -17,7 +17,7 @@ function App() {
     <Route path="/" element={ <Home/>} />
     <Route path="explore" element={<Explore/>} />
     <Route path="explore/coolcats" element={<CoolCats catsCol={nftData.coolCats}/>} />
-    <Route path="explore/coolcats/catinfo" element={<CatInfo/>} />
+    <Route path="explore/coolcats/:cat" element={<CatInfo cats={nftData.coolCats}/>} />
     
     </Routes>
     </div>

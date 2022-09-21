@@ -1,19 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom"
 function HomeCard({ image, button, description, title, color }) {
   return (
     <CardBody>
       <Figure>
-        <img src={`./explore/${image}`} alt="cover" />
+        <img src={`${image}`} alt="cover" />
 
         <CardDescription color={color}>
           <TextWrapper>
             <h2>{title}</h2>
             <p>{description}</p>
           </TextWrapper>
-
+          <Link to="/explore">
           <BtnColl color={color}>{button}</BtnColl>
+          </Link>
         </CardDescription>
       </Figure>
     </CardBody>
@@ -37,11 +38,9 @@ const CardBody = styled.div`
 const Figure = styled.figure`
   width: 100%;
   border-radius: 10px;
-  
   height: auto;
   img {
     width: 100%;
-
     border-radius: 10px 10px 0 0;
   }
 `;

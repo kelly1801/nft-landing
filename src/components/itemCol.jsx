@@ -9,13 +9,13 @@ function ItemCol({id,image,title,price,stock}) {
 <p>{id}</p>
 
 <Figure>
-<img src={`./explore/${image}`}/>
+<img src={`${image}`}/>
 </Figure>
 
 <ItemDescription>
     <h3>{title}</h3>
     <Price>
-    <img src='./explore/images/Img-price.png'/>
+    <img src='Img-price.png'/>
     <p>{price}</p>
     </Price>
   

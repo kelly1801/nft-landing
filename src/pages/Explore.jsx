@@ -3,7 +3,7 @@ import React from 'react'
 import Banner from '../components/Banner'
 import BannerMenu from '../components/BannerMenu'
 import nftData from '../../data'
-import ColCard from '../components/colCard'
+import ColCard from '../components/ColCard'
 import styled from 'styled-components'
 
 function Explore() {
@@ -16,7 +16,7 @@ const cards = nftData.trends.map(
 return (
     <div>
      
-        <Banner img={"./explore/images/Img-banner-2.png"}/>
+        <Banner img={"/Img-banner-2.png"}/>
       <BannerMenu/>
       <CardSection>
       {cards}

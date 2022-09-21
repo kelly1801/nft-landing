@@ -7,10 +7,10 @@ function ColCard({img, icon,title, author, description}) {
 <CardBody>
 <Link to='coolcats'>
 <Figure>
-    <img src={`./explore/${img}`} alt="collection cover" />
+    <img src={`${img}`} alt="collection cover" />
 
 <CardDescription>
-    <img src={`./explore/${icon}`} alt="icon collection" />
+    <img src={`${icon}`} alt="icon collection" />
     
     <TextWrapper>
     <h2>{title}</h2>

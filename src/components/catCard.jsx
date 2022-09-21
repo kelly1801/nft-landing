@@ -1,12 +1,13 @@
 import React from 'react'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import styled from 'styled-components';
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-function catCard({image, title}) {
+function CatCard({image, title, id}) {
+    let navigate = useNavigate()
   return (
-    <Link to='catInfo'>
-    <CardBody>
+   
+    <CardBody onClick={() => navigate(`${id}`)}>
 <Figure>
     <img src={image} alt="collection cover" />
 
@@ -16,13 +17,13 @@ function catCard({image, title}) {
     <h2>Cool Cats {title}</h2>
     <Price>
     <p>Top Bid</p>
-    <p><img src='./images/Img-price.png'/>  0.003</p>
+    <p><img src='/Img-price.png'/>  0.003</p>
     <Before>
         <p>antes</p>
-    <img src={`./images/Img-price.png`}/>
+    <img src={`/Img-price.png`}/>
         <p> 0.003</p></Before>
     <Likes>
-    <FavoriteBorderIcon onClick={() => styles.color="red"}/> 
+    <FavoriteBorderIcon/> 
         <p>145</p>
         </Likes>
     </Price>
@@ -32,11 +33,11 @@ function catCard({image, title}) {
 </Figure>
 
 </CardBody>
-</Link>
+
   )
 }
 
-export default catCard
+export default CatCard
 
 const CardBody = styled.div`
 display: flex;

@@ -4,7 +4,7 @@ function Avatar() {
   return (
     
     <AvatarContainer className='avatar'>
-        <img src="./images/Img-cool-cat.png" alt="cool cats cover" />
+        <img src="/Img-cool-cat.png" alt="cool cats cover" />
     </AvatarContainer>
   )
 }
